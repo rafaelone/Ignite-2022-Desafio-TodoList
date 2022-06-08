@@ -15,8 +15,9 @@ export default createGlobalStyle`
     --blue: #4EA8DE;
     --blue-dark: #1E6F9F;
     --danger: #E25858;
-
   }
+
+  
   
   * {
     padding: 0;

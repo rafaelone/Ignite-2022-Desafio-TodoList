@@ -25,17 +25,24 @@ export function Task({
 }: TaskProps) {
   return (
     <TaskContainer>
-      <Button type="button" onClick={() => handleChangeTask(id)}>
+      <Button
+        type="button"
+        onClick={() => handleChangeTask(id)}
+        data-testid="btn-change"
+      >
         {done ? (
-          <CheckCircle>
+          <CheckCircle data-testid="check-circle">
             <AiOutlineCheck size={10} color="#fff" />
           </CheckCircle>
         ) : (
-          <Circle />
+          <Circle data-testid="circle" />
         )}
         <p>{description}</p>
       </Button>
-      <RemoveButton onClick={() => handleRemoveTask(id)}>
+      <RemoveButton
+        onClick={() => handleRemoveTask(id)}
+        data-testid="btn-remove"
+      >
         <BsTrash size={20} color="#808080" />
       </RemoveButton>
     </TaskContainer>

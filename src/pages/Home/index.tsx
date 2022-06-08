@@ -69,7 +69,7 @@ export function Home() {
             value={text}
             onChange={(e) => setText(e.target.value)}
           />
-          <AddButton>
+          <AddButton data-testid="newTask">
             <strong>Criar</strong>
             <IoMdAddCircleOutline size={20} color="#fff" />
           </AddButton>
